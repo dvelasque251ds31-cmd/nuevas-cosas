@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para mi querida Dissney</title>
+    <style>
+        /* Estilos generales del cuerpo */
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f7f7f7; /* Fondo suave */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+        }
+
+        /* Contenedor principal del mensaje */
+        .contenedor {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            max-width: 80%;
+            animation: fadeIn 2s ease-out; /* Animación de aparición */
+        }
+
+        /* Estilo para el nombre */
+        .nombre {
+            color: #e91e63; /* Rosa fuerte */
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+            animation: pulse 1.5s infinite alternate; /* Animación de pulsación */
+        }
+
+        /* Estilo para el mensaje */
+        .mensaje {
+            color: #333;
+            font-size: 1.5em;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        /* Estilo para el botón (llamada a la acción) */
+        .boton-amor {
+            background-color: #ff5722; /* Naranja vibrante */
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            font-size: 1.2em;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .boton-amor:hover {
+            transform: scale(1.05); /* Ligeramente más grande al pasar el mouse */
+            box-shadow: 0 5px 15px rgba(255, 87, 34, 0.4);
+        }
+
+        /* ------------------- Animaciones ------------------- */
+
+        /* 1. Animación de Pulsación para el Nombre */
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            100% {
+                transform: scale(1.05);
+            }
+        }
+
+        /* 2. Animación de Aparición para el Contenedor */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* 3. Animación de Latido para el Corazón (opcional, si añades un corazón) */
+        .corazon {
+            font-size: 4em;
+            color: #e91e63;
+            margin-bottom: 10px;
+            animation: heartbeat 1s infinite;
+        }
+
+        @keyframes heartbeat {
+            0% {
+                transform: scale(1);
+            }
+            25% {
+                transform: scale(1.1);
+            }
+            50% {
+                transform: scale(1);
+            }
+            75% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="contenedor">
+        <div class="corazon">❤️</div> <h1 class="nombre">¡Mi querida Dissney!</h1>
+        
+        <p class="mensaje">
+            Desde el momento en que te conocí, mi mundo se llenó de color y alegría. 
+            Eres la persona más maravillosa, inteligente y amable que he conocido.
+            Cada momento contigo es un sueño hecho realidad.
+        </p>
+
+        <p class="mensaje">
+            Quiero que sepas que me has robado el corazón.
+            ¿Te gustaría embarcarte en esta aventura conmigo?
+        </p>
+        
+        <button class="boton-amor" onclick="alert('¡Sabía que dirías que sí! 🥰')">
+            Sé mi Novia/o
+        </button>
+
+        <p style="margin-top: 30px; color: #777;">Con todo mi cariño.</p>
+    </div>
+
+</body>
+</html>
